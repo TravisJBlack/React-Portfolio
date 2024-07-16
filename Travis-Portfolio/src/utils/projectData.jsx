@@ -1,6 +1,6 @@
 const projects = [
     {
-        id: 1,
+        id: 0,
         name: "Tech Blog",
         imgPath: "../../public/techBlog.png",
         group: "fullStack",
@@ -9,7 +9,7 @@ const projects = [
 
     },
     {
-        id: 2,
+        id: 1,
         name: "Enchanted Tails",
         imgPath: "../../public/enchantedTails.png",
         group: "fullStack",
@@ -17,15 +17,15 @@ const projects = [
          url: ""
     },
     {
-        id: 3,
+        id: 2,
         name: "Hotel Planner",
         imgPath: "../../public/planner.png",
         group: "frontend",
-        technologies: ["javascript", "handlebars"],
+        technologies: ["javascript", "handlebars", 'html'],
         url: ""
     },
     {
-        id: 4,
+        id: 3,
         name: "Text Editor",
         imgPath: "../../public/textEditor.png",
         group: "fullStack",
@@ -33,7 +33,7 @@ const projects = [
         url: "https://text-editor-i0rh.onrender.com"
     },
     {
-        id: 5,
+        id: 4,
         name: "Note Taker",
         imgPath: "../../public/noteTaker.png",
         group: "backend",

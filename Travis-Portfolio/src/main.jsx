@@ -1,12 +1,12 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './styles/reset.css'
 import './styles/tailwind.css';
 import App from './App'
 //removed css import of vite created css
 // import './index.css'
 
 import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import ContactPage from './pages/ContactPage';
@@ -21,10 +21,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
-      },
-      {
-        path: '/AboutMe',
         element: <AboutMe />,
       },
       {

@@ -1,7 +1,10 @@
+
 export default function Resume() {
     return (
-        <>
-            <h1>Resume</h1>
-        </>
-    )
-}
+        
+            <div className="bg-black  flex flex-wrap justify-center">
+                <iframe src='../../public/TravisResume.pdf' className="h-screen w-11/12"/>
+            </div>
+        )
+};
+    
