@@ -16,7 +16,7 @@ export const Header = () => {
 
   return (
    
-      <nav className="sticky top-0  bg-white border-gray-200 dark:bg-black">
+      <nav className="sticky top-0 z-50 bg-white border-gray-200 dark:bg-black">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src= {portfolioPicture} className="h-24" alt="Picuture of Travis Black" />

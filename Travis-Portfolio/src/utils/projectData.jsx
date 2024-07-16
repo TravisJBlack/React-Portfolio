@@ -43,7 +43,7 @@ const projects = [
         name: "Note Taker",
         imgPath: noteTaker,
         group: "backend",
-        technologies: ["javascript", "handlebars"],
+        technologies: ["javascript", "handlebars", 'mongodb'],
         url: "https:/note-taker-0r4z.onrender.com"
     }
 ]
