@@ -1,8 +1,14 @@
+import techBlog from '../../public/images/techBlog.png'
+import enchantedTails from '../../public/images/enchantedTails.png'
+import planner from '../../public/images/planner.png'
+import textEditor from '../../public/images/textEditor.png'
+import noteTaker from '../../public/images/noteTaker.png'
+
 const projects = [
     {
         id: 0,
         name: "Tech Blog",
-        imgPath: "../assets/images/techBlog.png",
+        imgPath: techBlog,
         group: "fullStack",
         technologies: ["javascript", "handlebars"],
         url: "https:/tech-blog-es9s.onrender.com"
@@ -11,7 +17,7 @@ const projects = [
     {
         id: 1,
         name: "Enchanted Tails",
-        imgPath: "../assets/images/enchantedTails.png",
+        imgPath: enchantedTails,
         group: "fullStack",
         technologies: ["javascript", "handlebars", "html"],
          url: ""
@@ -19,7 +25,7 @@ const projects = [
     {
         id: 2,
         name: "Hotel Planner",
-        imgPath: "../assets/images/planner.png",
+        imgPath: planner,
         group: "frontend",
         technologies: ["javascript", "handlebars", 'html'],
         url: ""
@@ -27,7 +33,7 @@ const projects = [
     {
         id: 3,
         name: "Text Editor",
-        imgPath: "../assets/images/textEditor.png",
+        imgPath: textEditor,
         group: "fullStack",
         technologies: ["javascript", "handlebars"],
         url: "https:/text-editor-i0rh.onrender.com"
@@ -35,7 +41,7 @@ const projects = [
     {
         id: 4,
         name: "Note Taker",
-        imgPath: "../assets/images/noteTaker.png",
+        imgPath: noteTaker,
         group: "backend",
         technologies: ["javascript", "handlebars"],
         url: "https:/note-taker-0r4z.onrender.com"

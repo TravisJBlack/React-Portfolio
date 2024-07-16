@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import portfolioPicture from '../../public/images/portfolioImage.jpeg'
 export const Header = () => {
   const [openNav, setOpenNav] = useState('hidden');
 
@@ -17,7 +19,7 @@ export const Header = () => {
       <nav className="sticky top-0  bg-white border-gray-200 dark:bg-black">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="../assets/images/portfolioImage.jpeg" className="h-24" alt="Picuture of Travis Black" />
+            <img src= {portfolioPicture} className="h-24" alt="Picuture of Travis Black" />
             <span className="shadow-lg  shadow-red-500 self-center text-6xl font-semibold whitespace-nowrap text-white dark:text-white">Travis Black</span>
           </div>
           <button data-collapse-toggle="navbar-default" type="button" onClick={() => toggleNav()} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">

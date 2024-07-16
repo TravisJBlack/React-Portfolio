@@ -1,5 +1,10 @@
 import emailjs from '@emailjs/browser'
 import { useState } from 'react';
+
+import linkedinLogo from '../../public/images/linkedin.svg'
+import githubLogo from '../../public/images/github-mark.svg'
+
+
 export default function ContactPage() {
     const [open, setOpen] = useState(false);
     const sendEmail = (event) => {
@@ -23,11 +28,11 @@ export default function ContactPage() {
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
                     <div className='flex flex-wrap justify-center '>
-                    <a href="https://github.com/TravisJBlack">
-                        <img className="m-2 w-12 h-12 shadow-lg shadow-red-500 " src="../../public/linkedin.svg" alt="image of linkedin logo" />
-                    </a>
                     <a href="https://www.linkedin.com/in/travis-black-b262681ab/">
-                        <img className="m-2 w-12 h-12 shadow-lg shadow-red-500" src="../../public/github-mark.svg" alt="image of javascript logo" />
+                        <img className="m-2 w-12 h-12 shadow-lg shadow-red-500 " src={linkedinLogo} alt="image of linkedin logo" />
+                    </a>
+                    <a href="https://github.com/TravisJBlack">
+                        <img className="m-2 w-12 h-12 shadow-lg shadow-red-500" src={githubLogo} alt="image of javascript logo" />
                     </a>
                     </div>
                     <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Look forward to hearing from you!</p>
