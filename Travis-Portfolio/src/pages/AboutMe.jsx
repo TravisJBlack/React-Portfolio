@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <div className="min-h-screen bg-[url('../public/codingBackground.jpg')] text-white text-center">
+        <div className="min-h-screen bg-[url('../assets/images/codingBackground.jpg')] text-white text-center">
             <div className="flex items-center min-h-screen ">
                 <div className="w-1/2  bg-opacity-75">
                     <h1 className="p-4 text-4xl bg-gray-600 bg-opacity-50 ">Hi! I'm Travis </h1>
