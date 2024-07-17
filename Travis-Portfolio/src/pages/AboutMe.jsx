@@ -4,7 +4,7 @@ import portfolioImg from '../../public/images/portfolioImage.jpeg'
 export default function AboutMe() {
     return (
         <div className={'bg-black text-white text-center'}>
-            <div className="flex items-center ">
+            <div className="flex items-center m-4">
             <div className='flex justify-center items-center w-1/2'>
                 <img className='rounded-full w-96'src={portfolioImg}></img>
             </div>
