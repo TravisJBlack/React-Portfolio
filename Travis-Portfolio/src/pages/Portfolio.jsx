@@ -1,17 +1,8 @@
 import ProjectList from "../components/ProjectList";
 import projects from '../utils/projectData';
+import logos from '../utils/logoData';
+
 import { useState } from "react";
-
-import htmlLogo from '../../public/images/html.svg'
-import cssLogo from '../../public/images/css.svg'
-import javascriptLogo from '../../public/images/javascript.svg'
-import mongodbLogo from '../../public/images/mongodb.svg'
-import nodejsLogo from '../../public/images/nodejs.svg'
-import postgresqlLogo from '../../public/images/postgresql.svg'
-import webpackLogo from '../../public/images/webpack.svg'
-import handlebarsLogo from '../../public/images/handlebars.svg'
-
-
 
 export default function PortfolioPage() {
 
@@ -31,8 +22,8 @@ export default function PortfolioPage() {
     const filterTech = (tech) => {
         const techList = projects.filter(project => (project.technologies.includes(tech)));
         setProjectData(techList);
-        
-        
+
+
     }
 
     return (
@@ -50,30 +41,11 @@ export default function PortfolioPage() {
                     <button type="button" onClick={() => filterStack('fullStack')} className="text-gray-900 border border-white hover:border-gray-200 dark:border-black dark:hover:text-black dark:bg-red-900 dark:hover:border-white bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">Full stack</button>
                 </div>
                 <div className="flex flex-wrap justify-center m-3 md:pb-3">
-                    <button type='button'>
-                        <img className='mx-1 w-12 h-12 shadow-lg shadow-red-500' onClick={() => filterTech('html')} src={htmlLogo} alt="image of html logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('css')} src={cssLogo} alt="image of css logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('javascript')} src={javascriptLogo} alt="image of javascript logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('mongodb')} src={mongodbLogo} alt="image of mongodb logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('nodejs')} src={nodejsLogo} alt="image of nodejs logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('postgresql')} src={postgresqlLogo} alt="image of postgresql logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('webpack')} src={webpackLogo} alt="image of webpack logo" />
-                    </button>
-                    <button type='button'>
-                        <img className="mx-1 w-12 h-12 shadow-lg shadow-red-500" onClick={() => filterTech('handlebars')} src={handlebarsLogo} alt="image of webpack logo" />
-                    </button>
+                    {logos.map((logo, index) =>
+                        <button>
+                            <img className='mx-2 w-12 h-12 shadow-lg shadow-red-500 hover:scale-150 transition duration-500' onMouseEnter={() => filterTech(logo.name)} src={logo.image} alt={logo.alt} />
+                        </button>
+                    )}
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center 2xl:mx-80 xl:mx-36 mx-4">
                     <ProjectList projectData={projectData} />
