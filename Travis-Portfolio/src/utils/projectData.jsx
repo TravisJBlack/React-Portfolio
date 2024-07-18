@@ -11,7 +11,7 @@ const projects = [
         imgPath: techBlog,
         group: "fullStack",
         technologies: ["javascript", "handlebars"],
-        url: "https:/tech-blog-es9s.onrender.com"
+        url: "https://tech-blog-es9s.onrender.com"
 
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         imgPath: textEditor,
         group: "fullStack",
         technologies: ["javascript", "handlebars"],
-        url: "https:/text-editor-i0rh.onrender.com"
+        url: "https://text-editor-i0rh.onrender.com"
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const projects = [
         imgPath: noteTaker,
         group: "backend",
         technologies: ["javascript", "handlebars", 'mongodb'],
-        url: "https:/note-taker-0r4z.onrender.com"
+        url: "https://note-taker-0r4z.onrender.com"
     }
 ]
 
