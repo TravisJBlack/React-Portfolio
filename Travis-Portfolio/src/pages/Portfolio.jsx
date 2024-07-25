@@ -7,7 +7,6 @@ import { useState } from "react";
 export default function PortfolioPage() {
 
     const [projectData, setProjectData] = useState([...projects])
-    const [scale, setScale] = useState(new Array(projectData.length).fill(''))
 
     const filterStack = (group) => {
         if (group === "") {
@@ -35,7 +34,7 @@ export default function PortfolioPage() {
                 </div>
                 <div className="flex flex-wrap justify-center m-3 md:pb-3">
                     {logos.map((logo, index) =>
-                            <img className='mx-2 w-12 h-12 shadow-lg shadow-red-500 hover:scale-150 transition duration-500' onMouseEnter={() => filterTech(logo.name)} src={logo.image} alt={logo.alt} />
+                            <img key={index} className='mx-2 w-12 h-12 shadow-lg shadow-red-500 hover:scale-150 transition duration-500' onMouseEnter={() => filterTech(logo.name)} src={logo.image} alt={logo.alt} />
                     )}
                 </div>
                 <div className="flex items-center justify-center py-4 md:py-2 flex-wrap">

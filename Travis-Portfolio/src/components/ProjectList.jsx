@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ProjectList({ projectData , techData}) {
+function ProjectList({ projectData, techData }) {
     const [showTitle, setShowTitle] = useState(new Array(projectData.length).fill("invisible"))
 
     const [showColor, setShowColor] = useState(new Array(projectData.length).fill('grayscale'))
@@ -34,13 +34,22 @@ function ProjectList({ projectData , techData}) {
         <>
             {projectData.map((project, index) =>
 
-                <div key={index} className={`${showTech[index]}` }>
-                    <a href={project.url} target="_blank" className='relative' >
-                        <img data-color={index} className={`h-auto max-w-full rounded-lg shadow-lg shadow-red-500 hover:border-8 hover:border-red-900 ${showColor[index]}`}
-                            onMouseEnter={color} onMouseLeave={color} src={project.imgPath} alt="" />
-                         <p className={`text-black bg-red-500 bg-opacity-75 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${showTitle[index]}`}>{project.name}</p>
-                    </a>
+                <div key={index} className={`${showTech[index]}`}>
+                    <div>
+                        <a href={project.url} target="_blank" className='relative' >
+                            <img data-color={index} className={`h-auto max-w-full rounded-lg shadow-lg shadow-red-500 hover:border-8 hover:border-red-900 ${showColor[index]}`}
+                                onMouseEnter={color} onMouseLeave={color} src={project.imgPath} alt="" />
+                            <p className={`text-black bg-red-500 bg-opacity-75 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${showTitle[index]}`}>{project.name}</p>
+                        </a>
+                    </div>
+                    <div className="flex flex-col text-center m-3 ">
+                        <a href={project.GithubUrl} target="_blank" className="bg-red-900 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ">{project.name} GitHub Link</a>
+                        {project.technologies = project.technologies.toString().replace(/,/g, ", ")}
+                        <p className="text-white">Technologies used {project.technologies}.</p>
+                    </div>
+
                 </div>
+
             )}
         </>
     )
