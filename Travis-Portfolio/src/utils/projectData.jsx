@@ -45,7 +45,24 @@ const projects = [
         technologies: ["javascript", "handlebars", 'mongodb'],
         url: "https://note-taker-0r4z.onrender.com",
         GithubUrl: "https://github.com/TravisJBlack/Note-Taker"
-    }
+    },
+    {
+        name: "Book Search Engine",
+        imgPath: noteTaker,
+        group: "fullStack",
+        technologies: ['apollo', 'express', 'jwt', 'mongodb', 'react', ],
+        url: "https://note-taker-0r4z.onrender.com",
+        GithubUrl: "https://github.com/TravisJBlack/Note-Taker"
+    },
+    {
+        name: "Social Network API",
+        imgPath: noteTaker,
+        group: "backend",
+        technologies: ['express', 'mongodb' ],
+        url: "https://note-taker-0r4z.onrender.com",
+        GithubUrl: "https://github.com/TravisJBlack/Note-Taker"
+    },
+
 ]
 
 export default projects;

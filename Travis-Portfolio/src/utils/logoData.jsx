@@ -6,7 +6,7 @@ import nodejsLogo from '../../public/images/nodejs.svg'
 import postgresqlLogo from '../../public/images/postgresql.svg'
 import webpackLogo from '../../public/images/webpack.svg'
 import handlebarsLogo from '../../public/images/handlebars.svg'
-
+import reactLogo from '../../public/images/react.svg'
 const logos = [
     {
         id: 1,
@@ -55,6 +55,12 @@ const logos = [
         name: 'handlebars',
         image: handlebarsLogo,
         alt: "html's logo"
+    },
+    {
+        id: 9,
+        name: 'react',
+        image: reactLogo,
+        alt: "react's logo"
     }
 ]
 
