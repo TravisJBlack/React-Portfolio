@@ -7,6 +7,7 @@ function ProjectList({ projectData, techData }) {
 
     const [showTech, setShowTech] = useState(new Array(projectData.length).fill(''));
 
+    let last;
     const color = (e) => {
         const newColor = showColor.map((color, index) => {
             if (e.target.dataset.color == index) {
@@ -44,8 +45,10 @@ function ProjectList({ projectData, techData }) {
                     </div>
                     <div className="flex flex-col text-center m-3 ">
                         <a href={project.GithubUrl} target="_blank" className="bg-red-900 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ">{project.name} GitHub Link</a>
+                     {last = project.technologies[project.technologies.length-1]}
+                     {console.log(last)}
                         {project.technologies = project.technologies.toString().replace(/,/g, ", ")}
-                        <p className="text-white">Technologies used {project.technologies}.</p>
+                        <p className="text-white">Technologies: {project.technologies}.</p>
                     </div>
 
                 </div>
