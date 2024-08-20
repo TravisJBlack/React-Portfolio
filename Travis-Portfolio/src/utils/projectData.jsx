@@ -41,7 +41,7 @@ const projects = [
         imgPath: enchantedTails,
         group: "fullStack",
         technologies: ["javascript", "react", 'nodejs', "html", 'css','html'],
-        url: "",
+        url: "https://enchantedtailspetresort.netlify.app/",
         GithubUrl: "https://github.com/TravisJBlack/enchantedTailsPetResort"
     },
     {
