@@ -30,7 +30,9 @@ export default function PortfolioPage() {
             <div className="min-h-screen bg-black">
                 <div className="container mx-auto items-center">
                     <h1 className="text-white text-center text-3xl">My Projects:</h1>
-                    <p className="text-white text-center m-4">Feel free to take a look at some of the tehcnologies and projects personaly built below.</p>
+                    <p className="text-white text-center m-4 mb-0">Feel free to take a look at some of the tehcnologies and projects personaly built below.</p>
+                    <p className="text-white text-center ">(Most sites are deployed using render free service and are spun down due to inactivity)</p>
+                
                 </div>
                 <div className="flex flex-wrap justify-center m-3 md:pb-3">
                     {logos.map((logo, index) =>
