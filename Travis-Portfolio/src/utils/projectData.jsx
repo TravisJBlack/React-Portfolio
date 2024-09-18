@@ -10,6 +10,14 @@ import employeeTracker from '../../public/images/employeeTracker.png'
 
 const projects = [
     {
+        name: "Enchanted Tails",
+        imgPath: enchantedTails,
+        group: "frontend",
+        technologies: ["javascript", "react", "html", 'css','html'],
+        url: "https://enchantedtailspetresort.com/",
+        GithubUrl: "https://enchantedtailspetresort.com/"
+    },
+    {
         name: "Fitness Fusion",
         imgPath: fitnessFusion,
         group: "fullStack",
@@ -35,14 +43,6 @@ const projects = [
         url: "https://tech-blog-es9s.onrender.com",
         GithubUrl: "https://github.com/TravisJBlack/Tech-Blog"
 
-    },
-    {
-        name: "Enchanted Tails",
-        imgPath: enchantedTails,
-        group: "fullStack",
-        technologies: ["javascript", "react", 'nodejs', "html", 'css','html'],
-        url: "https://enchantedtailspetresort.netlify.app/",
-        GithubUrl: "https://github.com/TravisJBlack/enchantedTailsPetResort"
     },
     {
         name: "Text Editor",
